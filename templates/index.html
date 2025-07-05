@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Fact API</title>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
 </head>
+
 <body>
     <h1> 🐱 Get Random Cat Fact </h1>
     <div class="box">
-        <p class="fact"> {{cat_fact}}</p>
-        
+        <p style="font-size: 20px;">
+            {{ fact or "No fact available right now." }}
+        </p>
+
     </div>
     <form method="get">
-            <button type="submit"> Get New Fact </button>
-        </form>
+        <button type="submit"> Get New Fact </button>
+    </form>
+
+
 </body>
+
 </html>
