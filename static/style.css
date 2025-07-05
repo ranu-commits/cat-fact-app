@@ -1,34 +1,58 @@
-body{
-    font-family: 'segoi_UI', sans-serif;
+body {
+    font-family: 'Segoe UI', sans-serif;
     background-color: #f4f4f4;
     text-align: center;
     margin-top: 100px;
+    padding: 20px;
 }
 
-.box{
+.box {
     background: #fff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: inline-block;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
-button{
+button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     background: #ff9800;
     border-radius: 6px;
     color: white;
+    border: none;
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #e68900;
 }
 
-.fact{
+.fact {
     font-size: 18px;
     margin-top: 20px;
+}
+
+/* 🔁 Responsive for small devices */
+@media (max-width: 500px) {
+    body {
+        margin-top: 60px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .fact {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
